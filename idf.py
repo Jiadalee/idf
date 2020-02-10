@@ -72,6 +72,9 @@ def make_plot(mat, dur, lab, to_save=False):
         ax1.loglog(dur, mat[:, i], label=lab[i])
     ax1.set_ylabel('Rainfall (in/hr)', fontsize=12)
     ax1.set_xlabel('Duration (min)', fontsize=12)
+    x = (60, 100, 120, 150, 300, 720, 1440, 2000)
+    ax1.set_xticks(x[::1])
+    ax1.set_xticklabels(x[::1], fontsize=12)
     ax1.grid(True, which='both')
 
     ax1.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
