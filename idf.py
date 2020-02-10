@@ -547,7 +547,7 @@ if __name__ == '__main__':
     # IDF ANALYSIS
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
     # Define durations (min) for analyzing:
-    durations = [5, 15, 30, 60, 120, 180, 720, 1440]
+    durations = [60, 100, 120, 150, 300, 720, 1440]
     num_durs = len(durations)
 
     # Initialize all event IDF durations and rainfalls:
