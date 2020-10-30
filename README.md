@@ -57,7 +57,7 @@ optional arguments:
 
 **EXAMPLE 1 - USGS RAINGAGE DATA**
 
-Converts tab-separated file to csv and saves the IDF curve as a PNG image file.
+Download the USGS data from URL below; Put the input ppt into input directory; Converts tab-separated file to csv and saves the IDF curve as a PNG image file.
 
 ```
 python idf.py --usgs --save_plot nwis.waterdata.usgs.gov.txt   #check if you need to add the file extension '.txt'; it depends on you PC system
@@ -65,7 +65,7 @@ python idf.py --usgs --save_plot nwis.waterdata.usgs.gov.txt   #check if you nee
 
 **EXAMPLE 2 - TWO-COLUMN PLAIN TEXT FORMAT**
 
-Plots the IDF curve.
+ Formatted your ppt datasets; Put the input ppt into input file directory; Plots the IDF curve.
 
 ```
 python idf.py rainfall.txt
