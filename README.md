@@ -60,7 +60,7 @@ optional arguments:
 Converts tab-separated file to csv and saves the IDF curve as a PNG image file.
 
 ```
-python idf.py --usgs --save_plot nwis.waterdata.usgs.gov
+python idf.py --usgs --save_plot nwis.waterdata.usgs.gov.txt  # please check if you need to type the '.txt' file extension
 ```
 
 **EXAMPLE 2 - TWO-COLUMN PLAIN TEXT FORMAT**
