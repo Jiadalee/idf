@@ -72,7 +72,7 @@ def make_plot(mat, dur, lab, to_save=False):
         ax1.loglog(dur, mat[:, i], label=lab[i])
     ax1.set_ylabel('Rainfall (in/hr)', fontsize=12)
     ax1.set_xlabel('Duration (min)', fontsize=12)
-    x = (60, 100, 120, 150, 300, 720, 1440, 2000)
+    x = (60, 90, 120, 150, 300, 720, 1440, 2880)
     ax1.set_xticks(x[::1])
     ax1.set_xticklabels(x[::1], fontsize=12)
     ax1.grid(True, which='both')
@@ -417,7 +417,7 @@ if __name__ == '__main__':
     numtotal = data.shape[0]
 
     # Define minimum interevent time (MIT), hours:
-    mit = 5
+    mit = 6
 
     # Initialize last heard tracker & rain event counter:
     lastheard = data['timestamps'][0] - datetime.timedelta(hours=mit+1)
@@ -547,7 +547,7 @@ if __name__ == '__main__':
     # IDF ANALYSIS
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
     # Define durations (min) for analyzing:
-    durations = [60, 100, 120, 150, 300, 720, 1440]
+    durations = [60, 90, 120, 150, 300, 720, 1440, 2880]
     num_durs = len(durations)
 
     # Initialize all event IDF durations and rainfalls:
